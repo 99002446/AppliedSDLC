@@ -13,8 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install Cunit
-      run: sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
+    - name: Setup C++
+  # You may pin to the exact commit or the version.
+  # uses: Trass3r/setup-cpp@5483836ab5de3434caf3ab7d5d1fc19f0fa206f9
+  uses: Trass3r/setup-cpp@v1
       
     - name: install math library
       run:  sudo apt-get install -y libmath-libm-perl 
